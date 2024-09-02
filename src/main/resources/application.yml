@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: authorization-server
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/oauthdbd
+    username: postgres
+    password: admin
+    hikari:
+      connection-test-query: SELECT 1
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    generate-ddl: on
